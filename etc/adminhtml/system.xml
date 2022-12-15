@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magexpertise_tab" translate="label" sortOrder="99999">
+            <label>Magexpertise Extension</label>
+        </tab>
+        <section id="expertise" translate="label" type="text" sortOrder="99999" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Checkout</label>
+            <tab>magexpertise_tab</tab>
+            <resource>Magexpertise_CustomImageOnCheckout::custom_image</resource>
+            <group id="custom" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configuration</label>
+                <field id="title" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1">
+                    <label>Title</label>
+                </field>
+                <field id="image" translate="label" type="image" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom Image</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+                    <upload_dir config="system/filesystem/media" scope_info="1">magexpertise/custom/logo</upload_dir>
+                    <base_url type="media" scope_info="1">magexpertise/custom/logo</base_url>
+                    <comment>Image size: H200 x W200</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
