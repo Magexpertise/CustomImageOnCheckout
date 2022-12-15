@@ -2,7 +2,7 @@
     "name": "magexpertise/customimageoncheckout",
     "description": "Custom image shown on checkout page after the shipping address form, Admin can upload image from backend as well.",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
